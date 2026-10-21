@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digital Clock | StopWatch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+  </head>
+  <body>
+    
+    <!-- Digital Clock | StopWatch Project Edge Cases :-
+     1. Real World Clock Timing :- 09:05:12
+     2. 24 Hours and 12 Hours Concept with AM and PM
+     3. Only One Start In StopWatch
+      -->
+
+    <div class="container-fluid" id="container">
+        <div class="row contain-row flex-lg-row d-flex flex-column">
+
+            <!-- Digital Clock -->
+            <div class="col-12 col-lg-6 digi-box d-flex justify-content-center align-items-center">
+
+                  <div class="digi-clock w-75 bg-black">
+
+                       <div class="digi-clock-one">
+                         
+                              <h3>Digital Clock</h3>
+                       
+                              <div class="form-check form-switch text-white digi-clock-one-input">
+                                 <input class="form-check-input mb-1 inputCheck" type="checkbox" value="" id="checkNativeSwitch" switch>
+                                 <label class="form-check-label" for="checkNativeSwitch">
+                                   <h3>24 Hours</h3>
+                                 </label>
+                               </div>
+                        </div>                        
+      
+                       <div class="digi-clock-two">
+                           <h3 id="digi-clock-text" class="digi-text"></h3>
+                       </div>
+                       <div class="digi-clock-three">
+                          <h5 id="digi-date-text"></h5>
+                       </div>
+                  </div>
+            </div>
+
+            <!-- StopWatch -->
+            <div class="col-12 col-lg-6 stopbox d-flex align-items-center justify-content-center">
+                   <div class="stopwatch w-75 bg-black">
+                        <div class="stopwatch-head ">
+                            <h3>StopWatch</h3>
+                        </div>
+
+                      <!-- StopWatch Functionality -->
+                        <div class="stopwatch-text-box">
+                             <h1 id="stopwatch-text" class="stopwatch-text">00:00:00:000</h1>
+                             <div class="btn-group">
+                                 <button class="bg-success" id="start">Start</button>
+                                 <button class="bg-danger" id="stop">Stop</button>
+                                 <button class="bg-secondary" id="reset">Reset</button>
+                                 <button class="bg-primary" id="lap">Lap</button>
+                             </div>
+                        </div>
+                    </div>
+
+                    <div class="lapshot" id="lapList"></div>
+
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+@media (max-width:1024px) {
+    .digi-text{
+        font-size: 2rem;
+    }
+}
+
+/* =======================
+   Mobile (below 992px)
+======================= */
+
+@media (max-width: 991.98px){
+
+    #container{
+        height: auto;
+        min-height: 100vh;
+        padding: 1.5rem 0;
+        background: linear-gradient(90deg, rgba(53,57,59,1) 0%, rgba(58,61,61,1) 100%);
+        overflow: hidden;
+    }
+
+    .contain-row{
+        height: auto;
+        gap: 2rem;
+        gap: 12rem;
+    }
+
+    .digi-clock,
+    .stopwatch{
+        width: 75% !important;
+        margin-bottom: 0;
+    }
+
+    .digi-clock{
+        margin-top: 5rem;
+    }
+
+    .digi-text{
+        font-size: 2.2rem;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .stopwatch-head{
+        padding: 1rem 0;
+    }
+
+    .stopwatch-text{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .stopwatch-text-box{
+        margin: 2rem 0;
+    }
+
+    .digi-clock-one{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        align-items: flex-start;
+        gap: 0.75rem;
+        height: auto;
+    }
+
+    .digi-clock-one h3{
+        font-size: 1.2rem;
+    }
+
+    .digi-clock-one-input{
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #digi-date-text{
+        margin: 1rem 0;
+    }
+
+    .stopbox{
+        flex-direction: column;
+    }
+
+    .btn-group{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+    }
+
+    .btn-group button{
+        min-width: 90px;
+    }
+
+    .lapshot{
+        position: static;
+        width: 75%;
+        margin-top: 6rem;
+        height: auto;
+        padding: 1rem;
+        border-radius: 16px;
+    }
+
+    .lapItemSet{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+
+
+@media (max-width: 767.98px){
+
+    .contain-row{
+        gap: 4rem;
+    }
+
+    .digi-clock{
+        margin-top: 1rem;
+    }
+
+    .digi-text{
+        font-size: 1.8rem;
+    }
+
+    .stopwatch-text{
+        font-size: 1.6rem;
+    }
+
+    .digi-clock,
+    .stopwatch{
+        width: 95% !important;
+    }
+
+    .btn-group button{
+        width: 42%;
+    }
+
+    .btn-group{
+        width: 100%;
+    }
+}
