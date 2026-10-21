@@ -16,3 +16,6 @@ A responsive web project built using HTML, CSS, Bootstrap, and JavaScript.
 
 ## How to Run
 Open `index.html` in your browser.
+
+## Live Demo
+https://digital-clock-stopwatch-project.netlify.app/
